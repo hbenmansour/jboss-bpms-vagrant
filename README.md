@@ -15,3 +15,20 @@ And then configures for you :
  * MySQL Datasource for the BPMS persistence
  * admin and dev users
 
+
+The box mentioned in the Vagrantfile is a private one. You are encouraged to use a Centos6 box.
+
+After running `Vagrant up` and `Vagrant provision`, you will end up with a BRPMS installation accessible from the VM in `/vagrant/runtime/jboss-eap-6.1/`.
+
+
+To start the installation : 
+
+ * `Vagrant ssh`
+ * `cd /vagrant/runtime/jboss-eap-6.1/bin`
+ * `./standalone.sh -b 192.168.10.20 -bmanagement=192.168.10.20`
+
+Navigate to [http://localhost:8080/business-central](http://localhost:8080/business-central) and login using either admin/admin@123 or developer/developer@123 for admin and developer access respectively.
+
+
+
+
