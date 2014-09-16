@@ -17,6 +17,9 @@ And then configures for you :
 
 
 The box mentioned in the Vagrantfile is a private one. You are encouraged to use a Centos6 box.
+You will also have to download from the [Red Hat customer portal](http://access.redhat.com) the EAP and BPMS distribution and put them in the dist folder : 
+ * jboss-eap-6.1.1.zip
+ * jboss-bpms-6.0.1.GA-redhat-4-deployable-eap6.x.zip
 
 After running `Vagrant up` and `Vagrant provision`, you will end up with a BRPMS installation accessible from the VM in `/vagrant/runtime/jboss-eap-6.1/`.
 
